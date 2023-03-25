@@ -1,80 +1,65 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: arial;
-  line-height: 1.3;
-  margin-left: 5px;
-}
-span{
-  font-weight: bold;
-}
+@import url(
+'https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400;500;600;700&display=swap');
 
-
-h2{
-  font-size: 15px;
-}
-h1,
-h2{
-  color: #103e55;
-  line-height: 2.5;
-}
-
-.CV{
- background: rgb(99, 100, 102);
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-
-.cv-content{
-  width: 800px;
-  height: 1000px;
-  background: #fff;
-  padding: 35px;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Yaldevi', sans-serif;
+  background: black;
 
 }
-.name {
-  text-align: center;
-  line-height: 2.9;
-}
-.about{
-width: 70%;
-}
-.year-of-study{
-  display: inline-block;
-  width: 20%;
-  vertical-align: top;
 
-}
-.institution{
-display: inline-block;
-width: 70%;
-}
-.industrial-year{
-  display: inline-block;
-  width: 10%;
-  vertical-align: top;
-}
-.industrial-firm{
-  display: inline-block;
-  width: 60%;
-
-}
-.skill-list{
-  margin-left: 3.7em;
+h1 {
+	color: green;
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 22px;
 }
 
-.activities{
-  display: inline-block;
-  width: 170px;
-  vertical-align: top;
+h6 {
+	color: green;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 20px;
 }
-.sports{
-  
-  display: inline-block;
-  width: 70%;
+
+.my-gallery img{
+	height: 92px;
+	margin: 10px 0;
+	cursor: pointer;
+	display: block;
+	opacity: .5;
 }
-.list li{
-  display: inline;
+
+.my-gallery img:hover {
+	opacity: 1;
+}
+
+.my-gallery {
+	float: left;
+}
+
+.MacGallery {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	position: absolute;
+}
+
+.image-container img {
+	height: 400px;
+	transition: transform 1s;
+}
+
+.image-container img:hover{
+	transform: scale(1.5);
+	cursor: zoom-in;
+}
+
+.image-container {
+	float: right;
+	padding: 10px;
 }

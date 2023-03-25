@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Image Gallery 
+	</title>
+
+	<!--Style CSS-->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>MAC GALLERY</h1>
+	<h4>HOVER OVER THE IMAGE</h4>
+
+	<div class="MacGallery">
+		<div class="my-gallery">
+			<img src="img-007.jpg" alt="click here"
+				onclick="myImageFunction(this)">
+			<img src="Img-002.jpg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src= "img-001.jpg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+			<img src="IMG-006.jpg"
+				alt="click here"
+				onclick="myImageFunction(this)">
+		</div>
+
+		<div class="image-container">
+			<img id="img-Box" src="IMG-005.jpg"
+				alt="click here">
+		</div>
+	</div>
+
+	<script>
+		function myImageFunction(productSmallImg) {
+			var productFullImg = document.getElementById("img-Box");
+			productFullImg.src = productSmallImg.src;
+		}
+	</script>
+</body>
+
+</html>
